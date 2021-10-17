@@ -1,14 +1,14 @@
 #getting centos from dockerhub
 FROM centos
 #who create code
-MAINTAINER phani <phanij1912@gmail.com>
+MAINTAINER khagesh <k.m.nkishore44@gmail.com>
 RUN mkdir /opt/tomcat
 #createdirectory
 WORKDIR /opt/tomcat
 #Install required pacages
 RUN yum install git -y && yum install maven -y && yum install java -y
 #Clone the application from github
-RUN git clone https://github.com/phanijalaparthiPJ/maven-web-application.git
+RUN git clone https://github.com/Khagesh-Technologies-pvt-ltd/maven-web-application.git
 #Download tomcat software and untar
 ADD https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.54/bin/apache-tomcat-9.0.54.tar.gz .
 RUN tar -xvzf apache-tomcat-9.0.54.tar.gz
